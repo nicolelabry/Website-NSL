@@ -1,0 +1,119 @@
+#pageContainer{
+    position: relative;
+    min-height: 100vp;
+}
+#ContentWrap{
+    padding-bottom: 5rem;
+}
+
+.HeaderImage{
+    z-index: 0;
+}
+
+.HeaderFlexContainer{
+    display: flex;
+    position: relative;
+    max-width: 1440px;
+    min-width: 350px;
+    margin: 8px;
+}
+
+.Logo{
+    position: absolute;
+    width: 20%;
+    margin-left: 13%;
+    margin-top: -27%;
+    z-index: 1;
+
+}
+
+.About{
+    position: absolute;
+    margin-top: -30.25%;
+    margin-left: 45%;
+    width: 20%;
+    margin-top: -18%;
+}
+
+.CompassRose{
+    position: absolute;
+    width: 3%;
+    margin-left: 75%;
+    margin-top: -16%;
+    z-index: 1;
+}
+
+.Body{
+    background-color: #E6EBDC;
+    width: 100%;
+}
+
+.Dots{
+ position: absolute;
+ z-index: 1000;
+ margin-left: 27.75%;
+ margin-top: 4%;
+ padding-bottom: 20%;
+ width: 10%;
+}
+
+.content{
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: -20%;
+    margin-top: 10%;
+}
+
+.button {
+    background-color: #225159;
+    border: none;
+    margin-left: 40%;
+    margin-right:10%;
+    margin-top: 5%;
+    color: white;
+    padding: 12% 5%;
+    text-align: left;
+    align-content: center;
+    border-radius: 400px;
+    font-family: poppins light, sans-serif;
+    font-size: 100%;
+}
+
+.ProfilePic{
+    position: absolute;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    margin-left: 70%;
+    margin-right: 0%;
+    z-index: 2;
+    max-width: 20%;
+}
+
+.RoundedCorners{
+    border-radius: 15px;
+}
+
+.Footer{
+    position:absolute;
+    bottom: 0;
+    height: 10rem;
+    margin-top: 10rem;
+    margin-bottom: -10rem;
+    background: white;
+    width: 100%;
+    display: inline;
+
+}
+
+.FooterText{
+    color: black;
+    font-family: poppins light, sans-serif;
+    font-size: 100%;
+    list-style: none;
+    text-align: left;
+    display: inline;
+    position: relative;
+    float: left;
+}

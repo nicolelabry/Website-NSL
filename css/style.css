@@ -1,20 +1,21 @@
+/* ABOUT SCREEN Note: This page is called index.HTML*/
+
 #pageContainer{
     position: relative;
-    min-height: 100vp;
+    
 }
 #ContentWrap{
-    padding-bottom: 5rem;
+    padding-bottom: 35rem;
 }
 
 .HeaderImage{
     z-index: 0;
+    width: 100%;
 }
 
 .HeaderFlexContainer{
     display: flex;
     position: relative;
-    max-width: 1440px;
-    min-width: 350px;
     margin: 8px;
 }
 
@@ -27,12 +28,11 @@
 
 }
 
-.About{
+.PageHeader{
     position: absolute;
-    margin-top: -30.25%;
     margin-left: 45%;
     width: 20%;
-    margin-top: -18%;
+    margin-top: -16%;
 }
 
 .CompassRose{
@@ -45,15 +45,15 @@
 
 .Body{
     background-color: #E6EBDC;
-    width: 100%;
+   
 }
 
 .Dots{
  position: absolute;
- z-index: 1000;
+ z-index: 999;
  margin-left: 27.75%;
  margin-top: 4%;
- padding-bottom: 20%;
+ padding-bottom: 5%;
  width: 10%;
 }
 
@@ -61,32 +61,32 @@
     font-size: 18px;
     align-items: center;
     justify-content: center;
-    margin-right: 10%;
+    margin-right: 1%;
     margin-left: -20%;
     margin-top: 10%;
 }
 
-.button {
+.button{
     background-color: #225159;
     border: none;
     margin-left: 40%;
     margin-right:10%;
-    margin-top: 5%;
+    margin-top: -20%;
     color: white;
-    padding: 12% 5%;
+    padding: 8% 4%;
     text-align: left;
     align-content: center;
     border-radius: 400px;
     font-family: poppins light, sans-serif;
     font-size: 100%;
+    width: 30%;
 }
 
 .ProfilePic{
     position: absolute;
-    padding-right: 10%;
-    padding-bottom: 10%;
-    margin-left: 70%;
+    margin-left: 55%;
     margin-right: 0%;
+    margin-top: -19.5%;
     z-index: 2;
     max-width: 20%;
 }
@@ -96,15 +96,16 @@
 }
 
 .Footer{
-    position:absolute;
-    bottom: 0;
-    height: 10rem;
-    margin-top: 10rem;
-    margin-bottom: -10rem;
-    background: white;
     width: 100%;
-    display: inline;
+    display: inline-flex;
+    float: left;
+    bottom: 0;
+    align-content: center;
+    margin-top: 10%;
+}
 
+.footerImage{
+    position: absolute;
 }
 
 .FooterText{
@@ -112,8 +113,282 @@
     font-family: poppins light, sans-serif;
     font-size: 100%;
     list-style: none;
-    text-align: left;
-    display: inline;
+    text-align: center;
+    display: inline-flex;
+    padding: 15%;
+    margin-left: 50%;
+    white-space: nowrap;
     position: relative;
-    float: left;
+}
+
+#AboutGlow{
+    margin-left: 26.1%;
+    margin-top: 2.25%;
+    z-index: 998;
+    width: 14%;
+}
+
+/* HOME SCREEN */
+
+.NoContent{
+    margin-bottom: 25%;
+}
+
+.CompassRose:active{
+    transform: rotate(45deg);
+    fill: black;
+}
+
+/*WHERE TO SCREEN*/
+
+.WhereToCompass{
+    position: absolute;
+    width: 3%;
+    margin-left: 31.35%;
+    margin-top: -2%;
+    z-index: 1000;
+    transform: rotate(45deg);
+}
+
+.hovertext {
+    position: relative;
+    font-family: poppins thin;
+    font-size: 350%;
+    display: inline;
+    margin-left: 31.25%;
+    margin-top: 5.5%;
+    z-index: 1000;
+    color: #E6DBDB;
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+
+    position: absolute;
+    z-index: 999;
+    left: -650%;
+    top: 0;
+}
+  
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Portfolio Hover Section Start*/
+.hoverportfolio{
+    position: relative;
+    font-family: poppins thin;
+    font-size: 350%;
+    display: inline;
+    margin-left: -2.5%;
+    margin-top: 14%;
+    z-index: 1000;
+    color: black;
+}
+
+.hoverportfolio:before{
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+
+    position: absolute;
+    z-index: 997;
+    left: -750%;
+    top: 0;
+}
+  
+.hoverportfolio:hover:before{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Portfolio Hover Section End*/
+
+/*Skills Hover Section Start*/
+
+.hoverskills{
+    position: relative;
+    font-family: poppins thin;
+    font-size: 350%;
+    display: inline;
+    margin-left: -2%;
+    margin-top: 23%;
+    z-index: 1000;
+    color: black;
+}
+
+.hoverskills:before{
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+
+    position: absolute;
+    z-index: 997;
+    left: -750%;
+    top: 0;
+}
+  
+.hoverskills:hover:before{
+    opacity: 1;
+    visibility: visible;
+}
+/*Skills Hover Section End*/
+
+/*Contact Hover Section Start*/
+.hovercontact{
+    position: relative;
+    font-family: poppins thin;
+    font-size: 350%;
+    display: inline;
+    margin-left: -2.5%;
+    margin-top: 32%;
+    z-index: 1000;
+    color: black;
+}
+
+.hovercontact:before{
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+
+    position: absolute;
+    z-index: 999;
+    left: -800%;
+    top: 0;
+}
+  
+.hovercontact:hover:before{
+    opacity: 1;
+    visibility: visible;
+}
+/*Contact Hover Section End*/
+
+
+.PageHeaderWhereTo{
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -14.5%;
+    width: 20%;
+    transform: scale(150%);
+}
+
+/* PORTFOLIO SCREEN*/
+
+#PortfolioHeader{
+    width: 25%;
+    margin-top: -15.75%;
+}
+
+#PortfolioGlow{
+    margin-top: -19.5%;
+    margin-left: 16.3%;
+    z-index: 998;
+    width: 14%;
+}
+
+.PortfolioButton{
+    background-color: black;
+    border: none;
+    width: 200%;
+    margin-left: 400%;
+    margin-top: 80%;
+    color: #FFA200;
+    padding: 100% 25%;
+    text-align: left;
+    align-content: center;
+    border-radius: 400px;
+    font-family: poppins light, sans-serif;
+    font-size: 100%;
+    z-index: 999;
+}
+
+/* SKILLS SCREEN*/
+#SkillsGlow{
+    margin-top: -108.2%;
+    margin-left: 12.93%;
+    z-index: 998;
+    width: 14%;
+}
+
+.SkillsButton{
+    background-color: #C44A08;
+    border: none;
+    width: 200%;
+    margin-left: 300%;
+    margin-top: 50%;
+    color: white;
+    padding: 60% 25%;
+    text-align: left;
+    align-content: center;
+    border-radius: 400px;
+    font-family: poppins light, sans-serif;
+    font-size: 100%;
+    z-index: 999;
+}
+
+#MoreSkills{
+    background-color: #C44A08;
+    border: none;
+    display: inline;
+    text-align: left;
+    align-content: center;
+    border-radius: 400px;
+    font-size: 100%;
+    z-index: 996;
+    padding: 5% 5%;
+    color: white;
+    height: 10%;
+    width: 100%;
+    height: 20%;
+    margin: 5%;
+    margin-left: -26.75%;
+
+}
+
+.MoreSkills{
+    margin-top: 110%;
+}
+
+#SkillsHeader{
+    width: 15%;
+}
+/* Contact Screen*/
+
+.ContactButton{
+    background-color: #AD82B5;
+    border: none;
+    width: 250%;
+    margin-left: 250%;
+    margin-top: 80%;
+    padding: 5%;
+    padding-top: 8%;
+    color: white;
+    text-align: center;
+    align-content: center;
+    border-radius: 200px;
+    font-family: poppins light, sans-serif;
+    font-size: 110%;
+    z-index: 999;
+}
+
+#ContactGlow{
+    margin-top: 26%;
+    margin-left: 6.8%;
+    z-index: 998;
+    width: 14%;
 }
